@@ -23,7 +23,7 @@ En plus des acteurs il existe un certain nombre de services publics qui permette
 * Rôles :
    - Pokémon
    - Dresseurs
-   - Arbitre de combat
+   - Juge de combat
    - Gérant d'une Arène
    - Organisateur de championnats
    - Espion
@@ -44,15 +44,15 @@ En plus des acteurs il existe un certain nombre de services publics qui permette
 2. Dresseurs :  
    ![Sacha](https://twimg0-a.akamaihd.net/profile_images/2711619684/e05382a4d026c7654d7a0cbf21fe64b7.jpeg) Le dresseur est le propriétaire d'un Pokémon. Son but est d'entraîner au mieux ses Pokémons au combat pour obtenir l'équipe capable de remporter tous les championnats. Dans son équipe il ne peut pas avoir plus de 3 Pokémons. Pour obtenir de nouveaux Pokémon il y a 4 possibilités : Les attraper, les gagner au combat, les échanger ou les vendre.
 
-3. Arbitre de combat :  
-   L'arbitre de combat est la personne qui a la responsabilité de veiller au respect des règles de combat. C'est lui qui déclare le gagnant et le perdant de chaque combat. Il doit aussi transmettre les fiches de combat au gérant de l'arène qui s'occupera d'établir les classements. Si un dresseur contrevient au règlement, son Pokémon engagé au combat ira au dresseur adverse.
+3. Juge de combat :  
+   L'juge de combat est la personne qui a la responsabilité de veiller au respect des règles de combat. C'est lui qui déclare le gagnant et le perdant de chaque combat. Il doit aussi transmettre les fiches de combat au gérant de l'arène qui s'occupera d'établir les classements. Si un dresseur contrevient au règlement, son Pokémon engagé au combat ira au dresseur adverse.
 
 4. Gérant d'une arène :  
-   C'est la mémoire d'une arène, les arbitres s'adressent à lui pour organiser les combats. Il s'occupe de la gestion des points ainsi que des classements. Il vérifie la cohérence des informations qui lui sont transmises et établit les différents classements.
+   C'est la mémoire d'une arène, les juges s'adressent à lui pour organiser les combats. Il s'occupe de la gestion des points ainsi que des classements. Il vérifie la cohérence des informations qui lui sont transmises et établit les différents classements.
    
 5. Organisateur de championnats :  
    Régulièrement les arènes organisent des championnats pour déterminer qui est le meilleur dresseur. L'organisateur a 
-   la charge de gérer les inscriptions, de planifier les combats, choisir les arbitres et de déclarer le vainqueur de la 
+   la charge de gérer les inscriptions, de planifier les combats, choisir les juges et de déclarer le vainqueur de la 
    compétition.
 
 6. Espion :  
