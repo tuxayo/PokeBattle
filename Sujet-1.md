@@ -79,7 +79,7 @@ Lorsque quelqu'un parle à un pokémon, celui-ci répond.
 
 Exemple:
 
-```
+```yaml
 pcreux: "@pikachuNyanNyan Salut!"
 pikachuNyanNyan: "Pika pika!"
 ```
@@ -90,7 +90,7 @@ Lorsque quelqu'un parle à un pokémon, celui-ci répond le mentionnant.
 
 Exemple:
 
-```
+```yaml
 pcreux: "@pikachuNyanNyan Salut!"
 pikachuNyanNyan: "@pcreux Pika pika!"
 ```
@@ -99,14 +99,14 @@ pikachuNyanNyan: "@pcreux Pika pika!"
 
 Exemple:
 
-```
+```yaml
 pcreux: "@pikachuNyanNyan Owner?"
 pikachuNyanNyan: "@pcreux @nedseb is my owner"
 ```
 
 ou
 
-```
+```yaml
 pcreux: "@pikachuNyanNyan Owner?"
 pikachuNyanNyan: "@pcreux No owner"
 ```
@@ -115,7 +115,7 @@ pikachuNyanNyan: "@pcreux No owner"
 
 Exemple:
 
-```
+```yaml
 pcreux: "@pikachuNyanNyan Owner?"
 pikachuNyanNyan: "@pcreux No owner"
 
@@ -127,7 +127,7 @@ pikachuNyanNyan: "@pcreux @pcreux is my owner"
 
 Exemple:
 
-```
+```yaml
 pcreux: "@pikachuNyanNyan Owner?"
 pikachuNyanNyan: "@pcreux @nedseb is my owner"
 
@@ -139,7 +139,7 @@ pikachuNyanNyan: "@pcreux @nedseb is my owner"
 
 Exemple:
 
-```
+```yaml
 pcreux: "@pikachuNyanNyan Owner?"
 pikachuNyanNyan: "@pcreux @pcreux is my owner"
 
@@ -151,7 +151,7 @@ pikachuNyanNyan: "@bulbizare1 #attack #foudre! /cc @pcreux"
 
 Exemple:
 
-```
+```yaml
 pcreux: "@pikachuNyanNyan Owner?"
 pikachuNyanNyan: "@pcreux @nedseb is my owner"
 
