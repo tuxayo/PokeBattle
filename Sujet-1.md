@@ -134,7 +134,7 @@ pcreux: "@pikachuNyanNyan #attack #foudre @bulbizare1"
 pikachuNyanNyan: "@bulbizare1 #attack #foudre! /cc @pcreux"
 ```
 
-### F-7 - Un pokemon ne répond aux ordres de son éleveur uniquement
+### F-7 - Un pokemon répond uniquement aux ordres de son éleveur
 
 Exemple:
 
