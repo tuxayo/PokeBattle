@@ -240,22 +240,34 @@ viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
 bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNyan"
 ```
 
-### F-12 - Un juge mentionne le vainqueur
+### F-12 - Combat
+
+Un dresseur est à l'origine d'un combat. Il indique le pokemon avec
+lequel il veut combattre et le nom du juge de combat.
+
+L'autre dresseur répond avec quel pokemon il souhaite combattre.
+
+```yaml
+pcreux: "@nedseb #fight with @bulbizare1 /cc @viviane"
+nedseb: "@pcreux #fight #ok with @pikachuNyanNyan. /cc @viviane"
+```
+
+### F-13 - Vainqueur
 
 Lorsqu'un pokemon meurt:
 
 ```yaml
-# attack...
+# suite d'attaques
 
 viviane: "@bulbizare1 -15pv /cc @pcreux"
 viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
 
-bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNyan
+bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNyan"
 ```
 
-Le juge dit:
+Le juge indique le pokemon vainqueur:
 
-```
-viviane: "@pikachuNyanNyan #Win
+```yaml
+viviane: "@pikachuNyanNyan #Win"
 ```
 
