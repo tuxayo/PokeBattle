@@ -55,3 +55,94 @@ Si tout est bon, mergez la Pull-Request dans master! Sinon, faites vos
 commentaires via Github. Il suffit de continuer de travailler sur la
 même branche et la pusher pour mettre à jour la pull request.
 
+## Fonctionnalités
+
+Voici les liste des fonctionnalité que nous souhaiterions voir
+développées.
+
+### F-1 - Pokemon répond (Déja implémenté)
+
+Lorsque quelqu'un parle à un pokémon, celui-ci répond.
+
+Example:
+
+```
+pcreux: "@pikachuNyanNyan Salut!"
+pikachuNyanNyan: "Pika pika!"
+```
+
+### F-2 - Pokemon répond en mentionnant son interlocuteur
+
+Lorsque quelqu'un parle à un pokémon, celui-ci répond le mentionnant.
+
+Example:
+
+```
+pcreux: "@pikachuNyanNyan Salut!"
+pikachuNyanNyan: "@pcreux Pika pika!"
+```
+
+### F-3 - Pokemon indique le nom de son éleveur
+
+Example:
+
+```
+pcreux: "@pikachuNyanNyan Owner?"
+pikachuNyanNyan: "@pcreux @nedseb is my owner"
+```
+
+ou
+
+```
+pcreux: "@pikachuNyanNyan Owner?"
+pikachuNyanNyan: "@pcreux No owner"
+```
+
+### F-4 - Un Pokemon sans éleveur peut être attrapé
+
+Example:
+
+```
+pcreux: "@pikachuNyanNyan Owner?"
+pikachuNyanNyan: "@pcreux No owner"
+
+pcreux: "@pikachuNyanNyan Pokeball!"
+pikachuNyanNyan: "@pcreux @pcreux is my owner"
+```
+
+### F-5 - Un pokemon avec éleveur ne peut être attrapé
+
+Example:
+
+```
+pcreux: "@pikachuNyanNyan Owner?"
+pikachuNyanNyan: "@pcreux @nedseb is my owner"
+
+pcreux: "@pikachuNyanNyan Pokeball!"
+pikachuNyanNyan: "@pcreux @nedseb is my owner"
+```
+
+### F-6 - Un pokemon attaque lorsque son éleveur le lui demande
+
+Example:
+
+```
+pcreux: "@pikachuNyanNyan Owner?"
+pikachuNyanNyan: "@pcreux @pcreux is my owner"
+
+pcreux: "@pikachuNyanNyan #attack #foudre @bulbizare1"
+pikachuNyanNyan: "@bulbizare1 #attack #foudre! /cc @pcreux"
+```
+
+### F-7 - Un pokemon ne répond aux ordres de son éleveur uniquement
+
+Example:
+
+```
+pcreux: "@pikachuNyanNyan Owner?"
+pikachuNyanNyan: "@pcreux @nedseb is my owner"
+
+pcreux: "@pikachuNyanNyan #attack #foudre @bulbizare1"
+pikachuNyanNyan: "@pcreux @nedseb is my owner"
+```
+
