@@ -64,7 +64,7 @@ développées.
 
 Lorsque quelqu'un parle à un pokémon, celui-ci répond.
 
-Example:
+Exemple:
 
 ```
 pcreux: "@pikachuNyanNyan Salut!"
@@ -75,7 +75,7 @@ pikachuNyanNyan: "Pika pika!"
 
 Lorsque quelqu'un parle à un pokémon, celui-ci répond le mentionnant.
 
-Example:
+Exemple:
 
 ```
 pcreux: "@pikachuNyanNyan Salut!"
@@ -84,7 +84,7 @@ pikachuNyanNyan: "@pcreux Pika pika!"
 
 ### F-3 - Pokemon indique le nom de son éleveur
 
-Example:
+Exemple:
 
 ```
 pcreux: "@pikachuNyanNyan Owner?"
@@ -100,7 +100,7 @@ pikachuNyanNyan: "@pcreux No owner"
 
 ### F-4 - Un Pokemon sans éleveur peut être attrapé
 
-Example:
+Exemple:
 
 ```
 pcreux: "@pikachuNyanNyan Owner?"
@@ -112,7 +112,7 @@ pikachuNyanNyan: "@pcreux @pcreux is my owner"
 
 ### F-5 - Un pokemon avec éleveur ne peut être attrapé
 
-Example:
+Exemple:
 
 ```
 pcreux: "@pikachuNyanNyan Owner?"
@@ -124,7 +124,7 @@ pikachuNyanNyan: "@pcreux @nedseb is my owner"
 
 ### F-6 - Un pokemon attaque lorsque son éleveur le lui demande
 
-Example:
+Exemple:
 
 ```
 pcreux: "@pikachuNyanNyan Owner?"
@@ -136,7 +136,7 @@ pikachuNyanNyan: "@bulbizare1 #attack #foudre! /cc @pcreux"
 
 ### F-7 - Un pokemon ne répond aux ordres de son éleveur uniquement
 
-Example:
+Exemple:
 
 ```
 pcreux: "@pikachuNyanNyan Owner?"
