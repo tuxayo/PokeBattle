@@ -175,8 +175,8 @@ Lorsque quelqu'un parle à un pokémon, celui-ci répond.
 Exemple:
 
 ```yaml
-pcreux: "@pikachuNyanNyan Salut!"
-pikachuNyanNyan: "Pika pika!"
+pcreux: "@pikachuNyanNian Salut!"
+pikachuNyanNian: "Pika pika!"
 ```
 
 ### F-2 - Pokemon répond en mentionnant son interlocuteur
@@ -186,8 +186,8 @@ Lorsque quelqu'un parle à un pokémon, celui-ci répond le mentionnant.
 Exemple:
 
 ```yaml
-pcreux: "@pikachuNyanNyan Salut!"
-pikachuNyanNyan: "@pcreux Pika pika!"
+pcreux: "@pikachuNyanNian Salut!"
+pikachuNyanNian: "@pcreux Pika pika!"
 ```
 
 ### F-3 - Pokemon indique le nom de son éleveur
@@ -195,15 +195,15 @@ pikachuNyanNyan: "@pcreux Pika pika!"
 Exemple:
 
 ```yaml
-pcreux: "@pikachuNyanNyan Owner?"
-pikachuNyanNyan: "@pcreux @nedseb is my owner"
+pcreux: "@pikachuNyanNian Owner?"
+pikachuNyanNian: "@pcreux @nedseb is my owner"
 ```
 
 ou
 
 ```yaml
-pcreux: "@pikachuNyanNyan Owner?"
-pikachuNyanNyan: "@pcreux No owner"
+pcreux: "@pikachuNyanNian Owner?"
+pikachuNyanNian: "@pcreux No owner"
 ```
 
 ### F-4 - Un Pokemon sans éleveur peut être attrapé
@@ -211,11 +211,11 @@ pikachuNyanNyan: "@pcreux No owner"
 Exemple:
 
 ```yaml
-pcreux: "@pikachuNyanNyan Owner?"
-pikachuNyanNyan: "@pcreux No owner"
+pcreux: "@pikachuNyanNian Owner?"
+pikachuNyanNian: "@pcreux No owner"
 
 pcreux: "@pikachuNyanNyan Pokeball!"
-pikachuNyanNyan: "@pcreux @pcreux is my owner"
+pikachuNyanNian: "@pcreux @pcreux is my owner"
 ```
 
 ### F-5 - Un pokemon avec éleveur ne peut être attrapé
@@ -223,11 +223,11 @@ pikachuNyanNyan: "@pcreux @pcreux is my owner"
 Exemple:
 
 ```yaml
-pcreux: "@pikachuNyanNyan Owner?"
-pikachuNyanNyan: "@pcreux @nedseb is my owner"
+pcreux: "@pikachuNyanNian Owner?"
+pikachuNyanNian: "@pcreux @nedseb is my owner"
 
-pcreux: "@pikachuNyanNyan Pokeball!"
-pikachuNyanNyan: "@pcreux @nedseb is my owner"
+pcreux: "@pikachuNyanNian Pokeball!"
+pikachuNyanNian: "@pcreux @nedseb is my owner"
 ```
 
 ### F-6 - Un pokemon attaque lorsque son éleveur le lui demande
@@ -235,11 +235,11 @@ pikachuNyanNyan: "@pcreux @nedseb is my owner"
 Exemple:
 
 ```yaml
-pcreux: "@pikachuNyanNyan Owner?"
-pikachuNyanNyan: "@pcreux @pcreux is my owner"
+pcreux: "@pikachuNyanNian Owner?"
+pikachuNyanNian: "@pcreux @pcreux is my owner"
 
-pcreux: "@pikachuNyanNyan #attack #foudre @bulbizare1"
-pikachuNyanNyan: "@bulbizare1 #attack #foudre! /cc @pcreux"
+pcreux: "@pikachuNyanNian #attack #foudre @bulbizare1"
+pikachuNyanNian: "@bulbizare1 #attack #foudre! /cc @pcreux"
 ```
 
 Notez que le pokemon mentionne son éleveur
@@ -249,11 +249,11 @@ Notez que le pokemon mentionne son éleveur
 Exemple:
 
 ```yaml
-pcreux: "@pikachuNyanNyan Owner?"
-pikachuNyanNyan: "@pcreux @nedseb is my owner"
+pcreux: "@pikachuNyanNian Owner?"
+pikachuNyanNian: "@pcreux @nedseb is my owner"
 
-pcreux: "@pikachuNyanNyan #attack #foudre @bulbizare1"
-pikachuNyanNyan: "@pcreux @nedseb is my owner"
+pcreux: "@pikachuNyanNian #attack #foudre @bulbizare1"
+pikachuNyanNian: "@pcreux @nedseb is my owner"
 ```
 
 ### F-8 - Un pokemon indique le nom de son éleveur dans sa bio twitter
@@ -270,14 +270,14 @@ Exemple:
 ### F-9 - Un pokemon mentionne l'éleveur du pokemon qu'il attaque
 
 * `@pcreux` élève `bulbizare1`.
-* `@nedseb` élève `pikachuNyanNyan`.
+* `@nedseb` élève `pikachuNyanNian`.
 
 Lors de l'attaque, l'éleveur doit mentionné le nom de l'éleveur du
 pokemon qu'il attaque.
 
 ```yaml
-pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNyan /cc @nedseb"
-pikachuNyanNyan: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux"
+pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNian /cc @nedseb"
+pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux"
 ```
 
 ### F-10 - Un juge indique le nombre de points perdus à chaque attaque
@@ -287,18 +287,18 @@ pikachuNyanNyan: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux"
 Lors d'un combat:
 
 ```yaml
-pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNyan /cc @nedseb @viviane"
-bulbizare1: "@pikachuNyanNyan #attack #foudre /cc @nedseb @pcreux @viviane"
+pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNian /cc @nedseb @viviane"
+bulbizare1: "@pikachuNyanNian #attack #foudre /cc @nedseb @pcreux @viviane"
 
-nedseb: "@pikachuNyanNyan #attack #baston @bulbizare1 /cc @nedseb @viviane"
-pikachuNyanNyan: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
+nedseb: "@pikachuNyanNian #attack #baston @bulbizare1 /cc @nedseb @viviane"
+pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
 ```
 
 Le juge indique le nombre de points perdus par chaque pokemon:
 
 ```yaml
 viviane: "@bulbizare1 -15pv /cc @pcreux"
-viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
+viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 ```
 
 ### F-11 - Un pokemon indique lorsqu'il est #KO
@@ -309,20 +309,20 @@ viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
 Lors d'un combat:
 
 ```yaml
-pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNyan /cc @nedseb @viviane"
-bulbizare1: "@pikachuNyanNyan #attack #foudre /cc @nedseb @pcreux @viviane"
+pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNian /cc @nedseb @viviane"
+bulbizare1: "@pikachuNyanNian #attack #foudre /cc @nedseb @pcreux @viviane"
 
-nedseb: "@pikachuNyanNyan #attack #baston @bulbizare1 /cc @nedseb @viviane"
-pikachuNyanNyan: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
+nedseb: "@pikachuNyanNian #attack #baston @bulbizare1 /cc @nedseb @viviane"
+pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
 
 viviane: "@bulbizare1 -15pv /cc @pcreux"
-viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
+viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 ```
 
 `@bulbizare1` arrive à 0pv et dit:
 
 ```yaml
-bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNyan"
+bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNian"
 ```
 
 ### F-12 - Combat
@@ -334,7 +334,7 @@ L'autre dresseur répond avec quel pokemon il souhaite combattre.
 
 ```yaml
 pcreux: "@nedseb #fight with @bulbizare1 /cc @viviane"
-nedseb: "@pcreux #fight #ok with @pikachuNyanNyan. /cc @viviane"
+nedseb: "@pcreux #fight #ok with @pikachuNyanNian. /cc @viviane"
 ```
 
 ### F-13 - Vainqueur
@@ -345,14 +345,14 @@ Lorsqu'un pokemon meurt:
 # suite d'attaques
 
 viviane: "@bulbizare1 -15pv /cc @pcreux"
-viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
+viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 
-bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNyan"
+bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNian"
 ```
 
 Le juge indique le pokemon vainqueur:
 
 ```yaml
-viviane: "@pikachuNyanNyan #Win"
+viviane: "@pikachuNyanNian #Win"
 ```
 
