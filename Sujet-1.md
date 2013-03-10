@@ -146,10 +146,7 @@ Si tout est bon, mergez la Pull-Request dans master! Sinon, faites vos
 commentaires via Github. Il suffit de continuer de travailler sur la
 même branche et la pusher pour mettre à jour la pull request.
 
-## Fonctionnalités
-
-Voici les liste des fonctionnalité que nous souhaiterions voir
-développées.
+## Pré-requis
 
 Vous devez créer un compte twitter pour chaque pokemon et chaque
 éleveur.
@@ -159,6 +156,17 @@ La bio des pokemons doit commencer par:
 ```
 #pokebattle - #pokemon
 ```
+
+En se basant sur le travail réalisé lors du dernier TP, @nedseb a 
+commencé à implémenter le projet Pokebattle.
+
+Rendez-vous sur https://github.com/IUTInfoAix/XXXXX, forkez ce projet et
+commencez à travailler en équipe.
+
+## Fonctionnalités
+
+Voici les liste des fonctionnalité que nous souhaiterions voir
+développées.
 
 ### F-1 - Pokemon répond (Déjà implémenté par @nedseb)
 
