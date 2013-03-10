@@ -71,7 +71,17 @@ même branche et la pusher pour mettre à jour la pull request.
 ## Fonctionnalités
 
 Voici les liste des fonctionnalité que nous souhaiterions voir
-développées.
+développées. Vous pouvez les développer dans n'importe quel ordre.
+Vous n'avez pas à toutes les développer.
+
+Vous devez créer un compte twitter pour chaque pokemon et chaque
+éleveur.
+
+La bio des pokemons doit commencer par:
+
+```
+#pokebattle - #pokemon
+```
 
 ### F-1 - Pokemon répond (Déja implémenté)
 
@@ -147,6 +157,8 @@ pcreux: "@pikachuNyanNyan #attack #foudre @bulbizare1"
 pikachuNyanNyan: "@bulbizare1 #attack #foudre! /cc @pcreux"
 ```
 
+Notez que le pokemon mentionne son éleveur
+
 ### F-7 - Un pokemon répond uniquement aux ordres de son éleveur
 
 Exemple:
@@ -157,5 +169,93 @@ pikachuNyanNyan: "@pcreux @nedseb is my owner"
 
 pcreux: "@pikachuNyanNyan #attack #foudre @bulbizare1"
 pikachuNyanNyan: "@pcreux @nedseb is my owner"
+```
+
+### F-8 - Un pokemon indique le nom de son éleveur dans sa bio twitter
+
+Afin de savoir qui est l'éleveur d'un pokemon
+Le profile twitter du pokemon doit afficher le nom de son éleveur
+
+Exemple:
+
+```
+#pokebattle - #pokemon - Owner: @nedseb
+```
+
+### F-9 - Un pokemon mentionne l'éleveur du pokemon qu'il attaque
+
+* `@pcreux` élève `bulbizare1`.
+* `@nedseb` élève `pikachuNyanNyan`.
+
+Lors de l'attaque, l'éleveur doit mentionné le nom de l'éleveur du
+pokemon qu'il attaque.
+
+```yaml
+pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNyan /cc @nedseb"
+pikachuNyanNyan: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux"
+```
+
+### F-10 - Un juge indique le nombre de points perdus à chaque attack
+
+* @viviane est juge
+
+Lors d'un combat:
+
+```yaml
+pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNyan /cc @nedseb @viviane"
+bulbizare1: "@pikachuNyanNyan #attack #foudre /cc @nedseb @pcreux @viviane"
+
+nedseb: "@pikachuNyanNyan #attack #baston @bulbizare1 /cc @nedseb @viviane"
+pikachuNyanNyan: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
+```
+
+Le juge indique le nombre de points perdus par chaque pokemon:
+
+```yaml
+viviane: "@bulbizare1 -15pv /cc @pcreux"
+viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
+```
+
+### F-11 - Un pokemon indique lorsqu'il est #KO
+
+* @viviane est juge
+* @bulbizare n'a plus que 10pv
+
+Lors d'un combat:
+
+```yaml
+pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNyan /cc @nedseb @viviane"
+bulbizare1: "@pikachuNyanNyan #attack #foudre /cc @nedseb @pcreux @viviane"
+
+nedseb: "@pikachuNyanNyan #attack #baston @bulbizare1 /cc @nedseb @viviane"
+pikachuNyanNyan: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
+
+viviane: "@bulbizare1 -15pv /cc @pcreux"
+viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
+```
+
+`@bulbizare1` arrive à 0pv et dit:
+
+```yaml
+bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNyan"
+```
+
+### F-12 - Un juge mentionne le vainqueur
+
+Lorsqu'un pokemon meurt:
+
+```yaml
+# attack...
+
+viviane: "@bulbizare1 -15pv /cc @pcreux"
+viviane: "@pikachuNyanNyan -10pv /cc @nedseb"
+
+bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNyan
+```
+
+Le juge dit:
+
+```
+viviane: "@pikachuNyanNyan #Win
 ```
 
