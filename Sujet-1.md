@@ -37,7 +37,7 @@ Le "Stand-up" ne doit pas durer plus de 5 minutes.
 ### TDD, Git et Pull-Requests
 
 À chaque fonctionnalité, créez une branche spécifique commençant par le
-numéro de la fonctionnalité. Exemple: `STORY-1-pokemon-repond-pikapika`
+numéro de la fonctionnalité. Exemple: `F-1-pokemon-repond-pikapika`
 
 Nous vous invitons à développer en faisant du Développement guidé par
 les tests (TDD in english): 
@@ -51,8 +51,8 @@ lisible.
 
 **Note:** Afin de faciliter le suivi du projet, nous vous demandons
 de commencer vos messages de commit par le numéro de la fonctionnalité
-que vous implémentez. Exemple: `STORY-1 - Pokemon répond "Pika Pika"` ou
-`STORY-1 - Correction des tests`
+que vous implémentez. Exemple: `F-1 - Pokemon répond "Pika Pika"` ou
+`F-1 - Correction des tests`
 
 Une fois que la fonctionnalité est développée, créez une pull request!
 
