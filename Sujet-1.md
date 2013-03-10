@@ -280,7 +280,7 @@ pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNyan /cc @nedseb"
 pikachuNyanNyan: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux"
 ```
 
-### F-10 - Un juge indique le nombre de points perdus à chaque attack
+### F-10 - Un juge indique le nombre de points perdus à chaque attaque
 
 * @viviane est juge
 
