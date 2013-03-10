@@ -71,8 +71,7 @@ même branche et la pusher pour mettre à jour la pull request.
 ## Fonctionnalités
 
 Voici les liste des fonctionnalité que nous souhaiterions voir
-développées. Vous pouvez les développer dans n'importe quel ordre.
-Vous n'avez pas à toutes les développer.
+développées.
 
 Vous devez créer un compte twitter pour chaque pokemon et chaque
 éleveur.
@@ -83,7 +82,7 @@ La bio des pokemons doit commencer par:
 #pokebattle - #pokemon
 ```
 
-### F-1 - Pokemon répond (Déja implémenté)
+### F-1 - Pokemon répond (Déjà implémenté par @nedseb)
 
 Lorsque quelqu'un parle à un pokémon, celui-ci répond.
 
