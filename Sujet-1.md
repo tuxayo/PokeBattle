@@ -2,6 +2,19 @@
 
 ## Sujet
 
+Le projet Pokebattle a pour but de créer un jeu Pokemon en ligne via
+Twitter.
+
+Les dresseurs ont pour objectif de faire s'affronter des Pokémons pour
+remporter des compétitions.
+
+Chaque dresseurs et chaque Pokémon a son propre compte Twitter. Ils
+communiquent en utilisant un protocole commun.
+
+Dans un premier temps, les comptes Twitter des dresseurs seront gérés
+par des humain, les comptes de Pokemon seront gérés par des bots
+Twitter... que vous allez implémenter!
+
 ## Méthode Agile
 
 ### Formez des groupes
