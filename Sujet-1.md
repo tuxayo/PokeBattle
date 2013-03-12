@@ -40,6 +40,7 @@ En plus des acteurs il existe un certain nombre de services publics qui permette
    - Pokedexia Universalis
    - Tribunal Révolutionaire Pokémon
    - Pokémon National Bank
+   - Centre Pokémon
 
 ### Description des rôles :
 
@@ -62,16 +63,22 @@ En plus des acteurs il existe un certain nombre de services publics qui permette
    compétition.
 
 6. L'agent secret :  
-   ![Jenny](https://raw.github.com/IUTInfoAix/PokeBattleRepo/master/agentJenny.jpg) L'agent secret se fait passer pour un dresseur pour identifier les tricheurs. À chaque tricheur détecté il gagne des points qui lui permettent d'améliorer son classement dans la ligue des agents secrets. Quand il pense avoir détecté une fraude, il la déclare au *Tribunal Révolutionaire Pokémon* qui déterminera grâce aux éléments fournis si la fraude est avérée. Toute fraude détectée rapporte aussi de l'argent.
+   ![Jenny](https://raw.github.com/IUTInfoAix/PokeBattleRepo/master/agentJenny.jpg) L'agent secret se fait passer pour un dresseur pour identifier les tricheurs. À chaque tricheur détecté il gagne des points qui lui permettent d'améliorer son classement dans la ligue des justiciers. Quand il pense avoir détecté une fraude, il la déclare au *Tribunal Révolutionaire Pokémon* qui déterminera grâce aux éléments fournis si la fraude est avérée. Toute fraude détectée rapporte aussi de l'argent.
 
 ### Description des services :
 
 1. Tableau des scores et classements :  
-   TODO!
+   Lors des différents combats officiels, les dresseurs acquiert des points. La somme de tous les points d'un dresseur constitue son score. 
+   C'est à partir du score qu'est établit le classement national de la *ligue pokebattle*. L'objectif de tout dresseur est de figurer dans 
+   le top 100 de ce classement pour avoir son nom connu du monde entier. En plus de cette ligue principale il existe d'autres 
+   ligues secondaires qui permettent à des dresseurs de se classer suivants d'autres critères. Par exemple la ligue des 
+   justiciers permet de connaître qui aura le mieux rétablit l'ordre.
 
    
 2. Annuaire des dresseurs :  
-   TODO!
+   Avant de pouvoir participer aux combats officiels, un jeune dresseur devra faire son inscription administrative. Un fois 
+   cette inscription faite, le dresseur apparaîtra dans l'annuaire des dresseurs. Une fois dans cette annuaire il pourra 
+   bénéficier d'un compte bancaire et ainsi avoir le droit de participer aux combats des différentes ligues. 
    
 3. Pokedexia Universalis :  
    Le pokédex (ou Pokedexia Universalis) est l'encyclopédie des Pokémons, il connaît tout sur toute les espèces. L’un des premiers objectifs du Pokédex est de répertorier toutes les espèces de Pokémons existantes. Pour chacun d’eux le dresseur souhaite connaître toutes les caractéristiques. Une espèce de Pokémon possède un nom qui est unique, une taille, un poids et une couleur. Par exemple l’espèce nommée “Bulbizarre” mesure 0,7m, pèse 6,9kg et est de couleur verte. Pour chaque espèce, on souhaite aussi connaître en quelle espèce elle peut évoluer. Certaines espèces sont au sommet de l’arbre de l’évolution et n’ont donc pas d’évolution possible. 
@@ -83,6 +90,10 @@ En plus des acteurs il existe un certain nombre de services publics qui permette
 
 5. Pokémon National Bank :  
    Le monde des Pokémons étant encore soumis à une dictature communiste, il n'y a qu'une seule banque d'état. C'est elle qui effectue la gestion des comptes de chaque dresseur et les flux financiers associés.
+6. Centre Pokémon :  
+   Un Centre Pokémon est un bâtiment essentiel pour un dresseur, cumulant les fonctions d'aire de soin, de repos et de gestion de son équipe.
+La plupart des villes disposent d'un centre Pokémon, à quelques exceptions près, et certains de ces bâtiments peuvent également être trouvés dans des zones rurales isolées. 
+   
 
 ## Sujet
 
