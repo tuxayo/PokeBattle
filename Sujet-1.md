@@ -179,8 +179,8 @@ commencé à implémenter le projet Pokebattle.
 
 Rendez-vous sur https://github.com/IUTInfoAix/PokeBotDemo, forkez ce projet et
 commencez à travailler en équipe. La première étape pour le rendre fonctionnel,
-est de compléter le fichier `src/main/resource/twitter4j.properties` avec les clef de connexion 
-que vous trouverez sur la page https://dev.twitter.com/apps après y avoir créé votre application. 
+est de compléter le fichier `src/main/resource/twitter4j.properties` avec les clefs de connexion 
+que vous obtiendrez après avoir créé une application sur la page https://dev.twitter.com/apps  
 Pour configurer ces clefs il existe d'autres méthodes que vous pouvez découvrir sur la page suivante : twitter4j.org/en/configuration.html 
 
 ## Fonctionnalités
