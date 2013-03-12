@@ -44,25 +44,25 @@ En plus des acteurs il existe un certain nombre de services publics qui permette
 ### Description des rôles :
 
 1. Pokémon :  
-   ![Pikachu](https://raw.github.com/IUTInfoAix/PokeBattle/master/pikachu.jpg) Les Pokémons sont des créatures belliqueuses par nature, leur préoccupation principale est de se battre. Pour cela chaque espèce apprend des attaques. La liste des attaques que peut apprendre un Pokémon dépend uniquement de son espèce. Pour chacune d’elles, on souhaite connaître sa description textuelle, sa puissance et la probabilité d’atteindre sa cible. Comme les espèces de Pokémons, les attaques aussi possède un “type”. Une attaque n’a qu’un et un seul type. Un Pokémon d’un type donné ne peut apprendre que des attaques de son type. Au fil des combats, il gagne des points d'expérience qui lui permette de faire évoluer ses caractéristiques. Son parcours initiatique est jalonné en niveau. Le Pokémon peut évoluer. Chaque espèce de Pokémon à des caractéristiques qui lui sont propres. À la naissance, deux Pokémons de la même espèces sont légèrement différents. Ses différences s'expliquent par le caractère propre à chaque individu.
+   ![Pikachu](https://raw.github.com/IUTInfoAix/PokeBattleRepo/master/pikachu.jpg) Les Pokémons sont des créatures belliqueuses par nature, leur préoccupation principale est de se battre. Pour cela chaque espèce apprend des attaques. La liste des attaques que peut apprendre un Pokémon dépend uniquement de son espèce. Pour chacune d’elles, on souhaite connaître sa description textuelle, sa puissance et la probabilité d’atteindre sa cible. Comme les espèces de Pokémons, les attaques aussi possède un “type”. Une attaque n’a qu’un et un seul type. Un Pokémon d’un type donné ne peut apprendre que des attaques de son type. Au fil des combats, il gagne des points d'expérience qui lui permette de faire évoluer ses caractéristiques. Son parcours initiatique est jalonné en niveau. Le Pokémon peut évoluer. Chaque espèce de Pokémon à des caractéristiques qui lui sont propres. À la naissance, deux Pokémons de la même espèces sont légèrement différents. Ses différences s'expliquent par le caractère propre à chaque individu.
    
 
 2. Dresseurs :  
-   ![Sacha](https://raw.github.com/IUTInfoAix/PokeBattle/master/sacha.jpg) Le dresseur est le propriétaire d'un Pokémon. Son but est d'entraîner au mieux ses Pokémons au combat pour obtenir l'équipe capable de remporter tous les championnats. Dans son équipe il ne peut pas avoir plus de 3 Pokémons. Pour obtenir de nouveaux Pokémon il y a 4 possibilités : Les attraper, les gagner au combat, les échanger ou les vendre.
+   ![Sacha](https://raw.github.com/IUTInfoAix/PokeBattleRepo/master/sacha.jpg) Le dresseur est le propriétaire d'un Pokémon. Son but est d'entraîner au mieux ses Pokémons au combat pour obtenir l'équipe capable de remporter tous les championnats. Dans son équipe il ne peut pas avoir plus de 3 Pokémons. Pour obtenir de nouveaux Pokémon il y a 4 possibilités : Les attraper, les gagner au combat, les échanger ou les vendre.
 
 3. Juge de combat :  
-   ![Jimmy](https://raw.github.com/IUTInfoAix/PokeBattle/master/arbitreJimmy.jpg) L'juge de combat est la personne qui a la responsabilité de veiller au respect des règles de combat. C'est lui qui déclare le gagnant et le perdant de chaque combat. Il doit aussi transmettre les fiches de combat au gérant de l'arène qui s'occupera d'établir les classements. Si un dresseur contrevient au règlement, son Pokémon engagé au combat ira au dresseur adverse.
+   ![Jimmy](https://raw.github.com/IUTInfoAix/PokeBattleRepo/master/arbitreJimmy.jpg) L'juge de combat est la personne qui a la responsabilité de veiller au respect des règles de combat. C'est lui qui déclare le gagnant et le perdant de chaque combat. Il doit aussi transmettre les fiches de combat au gérant de l'arène qui s'occupera d'établir les classements. Si un dresseur contrevient au règlement, son Pokémon engagé au combat ira au dresseur adverse.
 
 4. Gérant d'une arène :  
-   ![Don George](https://raw.github.com/IUTInfoAix/PokeBattle/master/donGeorge.jpg)C'est la mémoire d'une arène, les juges s'adressent à lui pour organiser les combats. Il s'occupe de la gestion des points ainsi que des classements. Il vérifie la cohérence des informations qui lui sont transmises et établit les différents classements.
+   ![Don George](https://raw.github.com/IUTInfoAix/PokeBattleRepo/master/donGeorge.jpg)C'est la mémoire d'une arène, les juges s'adressent à lui pour organiser les combats. Il s'occupe de la gestion des points ainsi que des classements. Il vérifie la cohérence des informations qui lui sont transmises et établit les différents classements.
    
 5. Organisateur de championnats :  
-   ![Flora](https://raw.github.com/IUTInfoAix/PokeBattle/master/flora.jpg) Régulièrement les arènes organisent des championnats pour déterminer qui est le meilleur dresseur. L'organisateur a 
+   ![Flora](https://raw.github.com/IUTInfoAix/PokeBattleRepo/master/flora.jpg) Régulièrement les arènes organisent des championnats pour déterminer qui est le meilleur dresseur. L'organisateur a 
    la charge de gérer les inscriptions, de planifier les combats, choisir les juges et de déclarer le vainqueur de la 
    compétition.
 
 6. L'agent secret :  
-   ![Jenny](https://raw.github.com/IUTInfoAix/PokeBattle/master/agentJenny.jpg) L'agent secret se fait passer pour un dresseur pour identifier les tricheurs. À chaque tricheur détecté il gagne des points qui lui permettent d'améliorer son classement dans la ligue des agents secrets. Quand il pense avoir détecté une fraude, il la déclare au *Tribunal Révolutionaire Pokémon* qui déterminera grâce aux éléments fournis si la fraude est avérée. Toute fraude détectée rapporte aussi de l'argent.
+   ![Jenny](https://raw.github.com/IUTInfoAix/PokeBattleRepo/master/agentJenny.jpg) L'agent secret se fait passer pour un dresseur pour identifier les tricheurs. À chaque tricheur détecté il gagne des points qui lui permettent d'améliorer son classement dans la ligue des agents secrets. Quand il pense avoir détecté une fraude, il la déclare au *Tribunal Révolutionaire Pokémon* qui déterminera grâce aux éléments fournis si la fraude est avérée. Toute fraude détectée rapporte aussi de l'argent.
 
 ### Description des services :
 
