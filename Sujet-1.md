@@ -295,8 +295,8 @@ Lors de l'attaque, l'éleveur doit mentionné le nom de l'éleveur du
 pokemon qu'il attaque.
 
 ```yaml
-pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNian /cc @nedseb"
-pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux"
+pcreux: "@bulbizare1 #attack #charge @pikachuNyanNian /cc @nedseb"
+bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux"
 ```
 
 ### F-10 - Un juge indique le nombre de points perdus à chaque attaque
@@ -306,10 +306,10 @@ pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux"
 Lors d'un combat:
 
 ```yaml
-pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNian /cc @nedseb @viviane"
-bulbizare1: "@pikachuNyanNian #attack #foudre /cc @nedseb @pcreux @viviane"
+pcreux: "@bulbizare1 #attack #charge @pikachuNyanNian /cc @nedseb @viviane"
+bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux @viviane"
 
-nedseb: "@pikachuNyanNian #attack #baston @bulbizare1 /cc @nedseb @viviane"
+nedseb: "@pikachuNyanNian #attack #foudre @bulbizare1 /cc @pcreux @viviane"
 pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
 ```
 
@@ -328,10 +328,10 @@ viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 Lors d'un combat:
 
 ```yaml
-pcreux: "@bulbizare1 #attack #foudre @pikachuNyanNian /cc @nedseb @viviane"
-bulbizare1: "@pikachuNyanNian #attack #foudre /cc @nedseb @pcreux @viviane"
+pcreux: "@bulbizare1 #attack #charge @pikachuNyanNian /cc @nedseb @viviane"
+bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux @viviane"
 
-nedseb: "@pikachuNyanNian #attack #baston @bulbizare1 /cc @nedseb @viviane"
+nedseb: "@pikachuNyanNian #attack #foudre @bulbizare1 /cc @pcreux @viviane"
 pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
 
 viviane: "@bulbizare1 -15pv /cc @pcreux"
@@ -341,7 +341,7 @@ viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 `@bulbizare1` arrive à 0pv et dit:
 
 ```yaml
-bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNian"
+bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
 ```
 
 ### F-12 - Combat
@@ -366,7 +366,7 @@ Lorsqu'un pokemon meurt:
 viviane: "@bulbizare1 -15pv /cc @pcreux"
 viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 
-bulbizare1: "#KO /cc @viviane @nedseb @pikachuNyanNian"
+bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
 ```
 
 Le juge indique le pokemon vainqueur:
