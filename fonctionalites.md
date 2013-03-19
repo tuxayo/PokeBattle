@@ -1,3 +1,5 @@
+## Fonctionalités
+
 ### F-1 - Pokemon répond (Déjà implémenté par @nedseb)
 
 Lorsque quelqu'un parle à un pokémon, celui-ci répond avec son cri. Si vous ne vous souvenez 

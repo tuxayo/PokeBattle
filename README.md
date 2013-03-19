@@ -44,6 +44,12 @@ https://dev.twitter.com/apps. Pour configurer ces clefs il existe d'autres méth
 
 ## Univers
 
+[Univers](https://github.com/IUTInfoAix/PokeBattle/blob/master/univers.md)
+
 ## Méthodologie
 
+[Méthodologie](https://github.com/IUTInfoAix/PokeBattle/blob/master/methodologie.md)
+
 ## Fonctionnalités
+
+[Fonctionnalités](https://github.com/IUTInfoAix/PokeBattle/blob/master/fonctionalites.md)
