@@ -476,3 +476,36 @@ JoelleBourgPalet: "@pcreux @bulbizare1 is restored to full health"
 pcreux: "@bulbizare1 #stat #PV ?"
 bulbizare1: "@pcreux #PV=100/100"
 ```
+### F-19 - Un pokemon indique son niveau dans sa bio twitter
+
+Afin de savoir qui est l'éleveur d'un pokemon
+Le profile twitter du pokemon doit afficher le nom de son éleveur
+
+Exemple:
+
+```
+#pokebattle - #pokemon - Owner: @nedseb - Level: 1
+```
+
+### F-20 - Le juge calcul l'expérience gagnée en fin de combat
+
+* dans l'exemple @bulbizare1 est au niveau 1 et a une expérience de base de 64.
+
+Après le combat, le juge va calculer l'expérience gagné par le vainqueur. 
+
+Pour calculer cette expérience, il utilise la formule suivante :
+```
+Exp = expval* Level/7
+```
+`expval` est l'expérience de base propre à l'espèce du Pokémon vaincu.
+
+```yaml
+# suite d'attaques
+
+viviane: "@bulbizare1 -10pv /cc @pcreux"
+viviane: "@pikachuNyanNian -10pv /cc @nedseb"
+
+bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
+
+viviane: "@pikachuNyanNian #Win +9xp"
+```
