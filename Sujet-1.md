@@ -285,6 +285,9 @@ Exemple:
 ```
 #pokebattle - #pokemon - Owner: @nedseb
 ```
+Pour implémenter cette fonctionalité, vous utiliserez la méthode 
+[`updateProfile`](http://twitter4j.org/oldjavadocs/3.0.3/twitter4j/api/UsersResources.html#updateProfile%28java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String%29) 
+de la classe `Twitter`.
 
 ### F-9 - Un pokemon mentionne l'éleveur du pokemon qu'il attaque
 
