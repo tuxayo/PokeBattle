@@ -302,6 +302,7 @@ bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux"
 ### F-10 - Un juge indique le nombre de points perdus à chaque attaque
 
 * @viviane est juge
+* Pour le moment, toutes les attaques infligent les même dégats (-10pv), tous les pokémons ont le même nombre maximum de PV (100pv) et sont au niveau 1 
 
 Lors d'un combat:
 
@@ -316,7 +317,7 @@ pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
 Le juge indique le nombre de points perdus par chaque pokemon:
 
 ```yaml
-viviane: "@bulbizare1 -15pv /cc @pcreux"
+viviane: "@bulbizare1 -10pv /cc @pcreux"
 viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 ```
 
@@ -334,7 +335,7 @@ bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux @viviane"
 nedseb: "@pikachuNyanNian #attack #foudre @bulbizare1 /cc @pcreux @viviane"
 pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
 
-viviane: "@bulbizare1 -15pv /cc @pcreux"
+viviane: "@bulbizare1 -10pv /cc @pcreux"
 viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 ```
 
@@ -363,7 +364,7 @@ Lorsqu'un pokemon meurt:
 ```yaml
 # suite d'attaques
 
-viviane: "@bulbizare1 -15pv /cc @pcreux"
+viviane: "@bulbizare1 -10pv /cc @pcreux"
 viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 
 bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
@@ -375,3 +376,103 @@ Le juge indique le pokemon vainqueur:
 viviane: "@pikachuNyanNian #Win"
 ```
 
+### F-14 - Validité des attaques
+
+Un pokémon refuse d'attaquer s'il ne connait pas une attaque. 
+Le joueur perd donc le droit d'attaquer pour le tour courant.
+
+Lors d'un combat:
+
+```yaml
+pcreux: "@bulbizare1 #attack #charge @pikachuNyanNian /cc @nedseb @viviane"
+bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux @viviane"
+
+nedseb: "@pikachuNyanNian #attack #grumpycat @bulbizare1 /cc @pcreux @viviane"
+pikachuNyanNian: "@nedseb  o_O ? /cc @pcreux @viviane @bulbizare1"
+
+viviane: "@bulbizare1 -0pv /cc @pcreux"
+viviane: "@pikachuNyanNian -10pv /cc @nedseb"
+```
+Pour connaitre les attaques dont il dispose, le pokémon peut utiliser le Pokedex mis à sa disposition (https://raw.github.com/IUTInfoAix/Pokedex/master/data/pokedex.json). 
+Ce fichier évoluera au fur et à mesure de l'ajout des stories, il faudra donc sur son évolution.
+Pour parser un fichier JSON vous pouvez vous inspirer des exemples suivants : https://gist.github.com/nedseb/29b8ca20dd0a5c14a9f3.
+
+### F-15 - Un Pokémon donne ses caractéristiques quand on les lui demande
+
+Un pokémon dispose d'un certain nombre de caractéristiques qui lui sont propres. 
+Il doit les donner quand on les lui demande. 
+
+Par exemple pour connaitre le niveau d'un pokémon :
+```yaml
+pcreux: "@bulbizare1 #stat #level ?"
+bulbizare1: "@pcreux #level=1"
+```
+
+Pour l'expérience :
+```yaml
+pcreux: "@bulbizare1 #stat #XP ?"
+bulbizare1: "@pcreux #XP=0"
+```
+
+Pour connaitre le nombre de PV (courant et max) :
+```yaml
+pcreux: "@bulbizare1 #stat #PV ?"
+bulbizare1: "@pcreux #PV=10/100"
+```
+### F-16 - Un Pokémon donne ses caractéristiques d'attaque quand on les lui demande
+
+Pour savoir combien de PP il lui reste pour une attaque donnée :
+```yaml
+pcreux: "@bulbizare1 #statAttack #PP #charge ?"
+bulbizare1: "@pcreux #charge #PP=10/35"
+```
+### F-17 - Un Pokémon inactif retrouve progressivement ses PV
+
+Un pokémon laissé inactif récupère ses PV au fil du temps. Au total il récupère 10% de ses 
+PV toutes les heures.
+
+Par exemple, à 8h30 :
+```yaml
+pcreux: "@bulbizare1 #stat #PV ?"
+bulbizare1: "@pcreux #PV=10/100"
+```
+
+@bulbizare1 reste inactif
+
+À 9h29 :
+```yaml
+pcreux: "@bulbizare1 #stat #PV ?"
+bulbizare1: "@pcreux #PV=10/100"
+```
+
+À 9h30
+```yaml
+pcreux: "@bulbizare1 #stat #PV ?"
+bulbizare1: "@pcreux #PV=20/100"
+```
+
+### F-18 - Un Pokémon peut aller au centre pokémon pour retrouver toutes ses capacités
+
+ * @JoelleBourgPalet est la gérante du centre pokémon du Bourg Palette
+ * @bulbizare1 n'a plus que 10PV
+
+Quand un dresseur porte un de ses pokémons dans un centre pokémon, la durée des soins est proportionnelle 
+au pourcentage de PV à restaurer. 
+
+Si un pokémon est KO (restauration de 100% des PV), il lui faut attendre 10 minutes avant de retrouver 
+l'usage de son pokémon. Si un pokémon n'a que 50% de ses PV à recupérer, il devra attendre 5 minutes.
+
+```yaml
+pcreux: "@bulbizare1 #stat #PV ?"
+bulbizare1: "@pcreux #PV=20/100"
+pcreux: "@JoelleBourgPalet #heal @bulbizare1"
+JoelleBourgPalet: "@bulbizare1 #stat #PV ?"
+bulbizare1: "@JoelleBourgPalet #PV=20/100"
+JoelleBourgPalet: "@bulbizare1 come in the #pokecenter /cc @pcreux"
+```
+Après 8 minutes d'attente
+```yaml
+JoelleBourgPalet: "@pcreux @bulbizare1 is restored to full health"
+pcreux: "@bulbizare1 #stat #PV ?"
+bulbizare1: "@pcreux #PV=100/100"
+```
