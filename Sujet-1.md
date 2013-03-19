@@ -489,7 +489,9 @@ Exemple:
 
 ### F-20 - Le juge calcul l'expérience gagnée en fin de combat
 
-* dans l'exemple @bulbizare1 est au niveau 1 et a une expérience de base de 64.
+* dans l'exemple @bulbizare1 est au niveau 1.
+* Il a une expérience de base de 64.
+* Il ne lui reste que 10pv.
 
 Après le combat, le juge va calculer l'expérience gagné par le vainqueur. 
 
