@@ -357,7 +357,7 @@ L'autre dresseur répond avec quel pokemon il souhaite combattre.
 
 ```yaml
 pcreux: "@nedseb #fight with @bulbizare1 /cc @viviane"
-nedseb: "@pcreux #fight #ok with @pikachuNyanNian. /cc @viviane"
+nedseb: "@pcreux #fight #ok with @pikachuNyanNian /cc @viviane"
 ```
 
 ### F-13 - Vainqueur
