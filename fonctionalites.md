@@ -293,6 +293,18 @@ JoelleBourgPalet: "@pcreux @bulbizare1 is restored to full health"
 pcreux: "@bulbizare1 #stat #PV ?"
 bulbizare1: "@pcreux #PV=100/100"
 ```
+Pour que le centre pokémon soit capable d'avertir quand il a fini, vous pouvez utiliser le service [@poketimer](https://twitter.com/PokeTimer).
+Ce service est une sorte de réveil que vous programmez pour vous avertir quand le temps demandé est terminé. 
+Pour programmer le @poketimer, il suffit d'envoyer un tweet avec le hashtag #WakeMeUp et la durée souhaitée en minute. 
+Pour reconnaitre les différents réveils que l'on a programmé, on peut personnaliser le message reçu. Pour ce faire, 
+le reste du message après la durée sera recopié dans le message envoyé par le @poketimer. 
+```yaml
+JoelleBourgPalet: "@PokeTimer #WakeMeUp 1 Min #PokePoke"
+```
+Après une minute d'attente
+```yaml
+PokeTimer: "@JoelleBourgPalet #DringDring #PokePoke"
+```
 
 ### F-19 - Un pokemon indique son niveau dans sa bio twitter
 
@@ -333,3 +345,29 @@ bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
 
 viviane: "@pikachuNyanNian #Win +9xp"
 ```
+### F-21 - Gestion des rounds de combat
+
+Lors d'un combat:
+
+```yaml
+pcreux: "@nedseb #fight with @bulbizare1 /cc @viviane"
+nedseb: "@pcreux #fight #ok with @pikachuNyanNian /cc @viviane"
+
+viviane: "Round #1 /cc @nedseb @pikachuNyanNian @pcreux @bulbizare1"
+
+pcreux: "@bulbizare1 #attack #charge @pikachuNyanNian /cc @nedseb @viviane #1"
+bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux @viviane #1"
+
+nedseb: "@pikachuNyanNian #attack #foudre @bulbizare1 /cc @pcreux @viviane #1"
+pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane #1"
+
+viviane: "@bulbizare1 -10pv /cc @pcreux #1"
+viviane: "@pikachuNyanNian -10pv /cc @nedseb #1"
+
+viviane: "Round #2 /cc @nedseb @pikachuNyanNian @pcreux @bulbizare1"
+
+```
+### F-22 - Ajout du hashtag #PokeBattle
+
+Rajouter, quand c'est possible, le hashtag #PokeBattle à la fin de tous les tweets émis par vos bot. 
+
