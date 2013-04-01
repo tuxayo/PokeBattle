@@ -371,3 +371,8 @@ viviane: "Round #2 /cc @nedseb @pikachuNyanNian @pcreux @bulbizare1"
 
 Rajouter, quand c'est possible, le hashtag #PokeBattle à la fin de tous les tweets émis par vos bot. 
 
+### F-23 - Déployer les bots sur Heroku
+En vous aidant de ce tutoriel (https://github.com/heroku/devcenter-java), déployez vos bots sur la 
+plate-forme de cloud computing Heroku (http://www.heroku.com/).
+
+Vous devez créer autant de compte que ce que vous avez de bot. Soyez très vigilent avec la gestion de vos clefs ssh.
