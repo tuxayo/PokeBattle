@@ -1,5 +1,7 @@
 # Pokémon battle
 
+## Univers
+
 Le projet Pokémon battle est une adaptation des jeux de programmation comme 
 [Core War](http://fr.wikipedia.org/wiki/Core_War) ou [Robocode](http://robowiki.net/). Le but de ces jeux est de 
 voir s'affronter des programmes dans une compétition dans un univers aux règles connues de tous.
@@ -42,14 +44,12 @@ Rendez-vous sur https://github.com/IUTInfoAix/PokeBotDemo, forkez ce projet et c
 est de compléter le fichier `src/main/resource/twitter4j.properties` avec les clefs de connexion que vous obtiendrez après avoir créé une application sur la page 
 https://dev.twitter.com/apps. Pour configurer ces clefs il existe d'autres méthodes que vous pouvez découvrir sur la page suivante : twitter4j.org/en/configuration.html 
 
-## Univers
+## Sujet détaillé
 
-[Univers](https://github.com/IUTInfoAix/PokeBattle/blob/master/univers.md)
+Après avoir pris connaissance de l'[Univers](https://github.com/IUTInfoAix/PokeBattle/blob/master/univers.md), 
+vous pourrez développer les [Fonctionnalités](https://github.com/IUTInfoAix/PokeBattle/blob/master/fonctionalites.md)
+définies en suivant la [Méthodologie](https://github.com/IUTInfoAix/PokeBattle/blob/master/methodologie.md) proposée.
 
-## Méthodologie
+Vous pouvez suivre l'avancement de votre projet sur le tableau de bord [PokeStatus](http://bit.ly/pokestatus).
 
-[Méthodologie](https://github.com/IUTInfoAix/PokeBattle/blob/master/methodologie.md)
-
-## Fonctionnalités
-
-[Fonctionnalités](https://github.com/IUTInfoAix/PokeBattle/blob/master/fonctionalites.md)
+En fin de projet, nous vous invitons à nous faire parvenir une [Retrospective](https://github.com/IUTInfoAix/PokeBattle/blob/master/retrospective.md).
