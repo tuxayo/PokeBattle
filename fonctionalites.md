@@ -372,7 +372,20 @@ viviane: "Round #2 /cc @nedseb @pikachuNyanNian @pcreux @bulbizare1"
 Rajouter, quand c'est possible, le hashtag #PokeBattle à la fin de tous les tweets émis par vos bot. 
 
 ### F-23 - Déployer les bots sur Heroku
-En vous aidant de ce tutoriel (https://github.com/heroku/devcenter-java), déployez vos bots sur la 
-plate-forme de cloud computing Heroku (http://www.heroku.com/).
+En vous aidant de ce tutoriel (https://github.com/nedseb/TutoHeroku), déployez vos bots sur la 
+plate-forme de cloud computing Heroku (http://www.heroku.com/). Soyez très vigilent avec la gestion 
+de vos clefs ssh quand vous changez de machine.
 
-Vous devez créer autant de compte que ce que vous avez de bot. Soyez très vigilent avec la gestion de vos clefs ssh.
+### F-24 - Controle de la qualité de votre code
+Pour vous aider à vérifier les indicateurs de qualité de votre code, nous avons installé 
+une instance sonar sur l'un des serveurs de l'iut. Pour accèder aux métriques de votre projet 
+allez sur la page http://139.124.187.9:9000/ et regardez tous les indicateurs disponibles. Le 
+nom de votre projet doit commencer par votre login github. Pour importer les projets, nous nous sommes
+basé sur la liste des forks donné par github. Si vous avez rendu votre dépot privé il est possible que 
+vous n'apparaissiez pas.
+
+Pour cette fonctionnalité, vous devez diminuer autant que possible les violations indiquées par sonar.
+
+
+
+
