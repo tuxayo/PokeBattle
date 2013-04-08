@@ -376,7 +376,7 @@ En vous aidant de ce tutoriel (https://github.com/nedseb/TutoHeroku), déployez 
 plate-forme de cloud computing Heroku (http://www.heroku.com/). Soyez très vigilent avec la gestion 
 de vos clefs ssh quand vous changez de machine.
 
-### F-24 - Controle de la qualité de votre code
+### F-24 - Contrôle de la qualité de votre code
 Pour vous aider à vérifier les indicateurs de qualité de votre code, nous avons installé 
 une instance sonar sur l'un des serveurs de l'iut. Pour accèder aux métriques de votre projet 
 allez sur la page http://139.124.187.9:9000/ et regardez tous les indicateurs disponibles. Le 
@@ -384,7 +384,8 @@ nom de votre projet doit commencer par votre login github. Pour importer les pro
 basé sur la liste des forks donné par github. Si vous avez rendu votre dépot privé il est possible que 
 vous n'apparaissiez pas.
 
-Pour cette fonctionnalité, vous devez diminuer autant que possible les violations indiquées par sonar.
+Pour cette fonctionnalité, vous devez diminuer autant que possible les violations indiquées par sonar
+et augmenter la couverture du code testé.
 
 
 
