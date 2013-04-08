@@ -387,6 +387,10 @@ vous n'apparaissiez pas.
 Pour cette fonctionnalité, vous devez diminuer autant que possible les violations indiquées par sonar
 et augmenter la couverture du code testé.
 
+### Retrospective
+
+En fin de semaine, merci de nous faire parvenir votre [retrospective](https://github.com/IUTInfoAix/PokeBattle/blob/master/retrospective.md).
+
 
 
 
