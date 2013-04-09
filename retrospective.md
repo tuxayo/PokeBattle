@@ -18,6 +18,6 @@ Vous pourriez aborder ces thèmes au travers des axes suivants:
 * Qu'avez-vous appris? Quelles expériences, connaissances, savoir-faire
 tirez vous de ce projet?
 
-Merci de nous envoyer ce retour par email: `pcreux AT gmail.com` et
-`sebastien.nedjar AT univ-amu.fr` en indiquant le nom de votre projet
+Merci de nous envoyer ce retour par email à `pcreux AT gmail.com` et
+`sebastien.nedjar AT univ-amu.fr` en indiquant l'url de votre projet
 Github.
