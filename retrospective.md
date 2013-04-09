@@ -19,5 +19,6 @@ Vous pourriez aborder ces thèmes au travers des axes suivants:
 tirez vous de ce projet?
 
 Merci de nous envoyer ce retour par email à `pcreux AT gmail.com` et
-`sebastien.nedjar AT univ-amu.fr` en indiquant l'url de votre projet
-Github.
+`sebastien.nedjar AT univ-amu.fr` en indiquant l'url du projet
+Github sur lequel vous avez travaillé, votre pseudo Github et les
+comptes twitter des bots qui tournent sur Heroku.
