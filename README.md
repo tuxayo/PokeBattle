@@ -52,6 +52,6 @@ définies en suivant la [Méthodologie](https://github.com/IUTInfoAix/PokeBattle
 
 Vous pouvez suivre l'avancement de votre projet sur le tableau de bord
 [PokeStatus](http://bit.ly/pokestatus) et sur
-[Sonar](http://139.124.187.9:9000/) (serveur interne à l'IUT).
+[Sonar](http://sonar.zapto.org:9000/) (serveur interne à l'IUT).
 
 En fin de projet, nous vous invitons à nous faire parvenir une [Retrospective](https://github.com/IUTInfoAix/PokeBattle/blob/master/retrospective.md).
