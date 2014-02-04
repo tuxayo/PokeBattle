@@ -3,7 +3,7 @@
 ### F-1 - Pokemon répond (Déjà implémenté par @nedseb)
 
 Lorsque quelqu'un parle à un pokémon, celui-ci répond avec son cri. Si vous ne vous souvenez 
-plus du cri exact de votre pokémon, vous pouvez essayer de le retrouver [ici](http://www.youtube.com/watch?v=YPvcwfbR7pY).
+plus du cri exact de votre pokémon, vous pouvez essayer de le retrouver [ici](http://www.youtube.com/watch?v=QuFfMWp-e2E).
 
 Exemple:
 
