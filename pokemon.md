@@ -143,14 +143,18 @@ bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
 
 ### P11 - Combat
 
+* @viviane est juge
+
 Un dresseur est à l'origine d'un combat. Il indique le pokemon avec
 lequel il veut combattre et le nom du juge de combat.
 
-L'autre dresseur répond avec quel pokemon il souhaite combattre.
+L'autre dresseur répond avec quel pokemon il souhaite combattre. Si le juge est disponible, 
+il indique quand le combat peut demmarer.
 
 ```yaml
 pcreux: "@nedseb #fight with @bulbizare1 /cc @viviane"
 nedseb: "@pcreux #fight #ok with @pikachuNyanNian /cc @viviane"
+viviane: "@bulbizare1 @pikachuNyanNian #fight #go /cc @nedseb @pcreux"
 ```
 
 ### P12 - Validité des attaques
