@@ -4,7 +4,7 @@ Dans la descrition de l'univers principal plusieurs rôles et services ont été
 * Rôles :
    - [Pokemon](https://github.com/IUTInfoAix/PokeBattle/blob/master/pokemon.md)
    - [Juge de combat](https://github.com/IUTInfoAix/PokeBattle/blob/master/juge_de_combat.md)
-   - Juge de combat
+   - Dresseur
    - Gérant d'une Arène
    - Organisateur de championnats
    - Agent secret
