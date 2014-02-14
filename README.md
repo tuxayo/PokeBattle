@@ -50,7 +50,4 @@ Après avoir pris connaissance de l'[Univers](https://github.com/IUTInfoAix/Poke
 vous pourrez développer les [Fonctionnalités](https://github.com/IUTInfoAix/PokeBattle/blob/master/fonctionalites.md)
 définies en suivant la [Méthodologie](https://github.com/IUTInfoAix/PokeBattle/blob/master/methodologie.md) proposée.
 
-Vous pouvez suivre l'avancement de votre projet sur le tableau de bord
-[PokeStatus](http://bit.ly/pokestatus).
-
 En fin de projet, nous vous invitons à nous faire parvenir une [Retrospective](https://github.com/IUTInfoAix/PokeBattle/blob/master/retrospective.md).
