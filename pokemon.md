@@ -1,6 +1,6 @@
 ## Fonctionalités du pokemon
 
-### F-1 - Pokemon répond (Déjà implémenté par @nedseb)
+### P1 - Pokemon répond (Déjà implémenté par @nedseb)
 
 Lorsque quelqu'un parle à un pokémon, celui-ci répond avec son cri. Si vous ne vous souvenez 
 plus du cri exact de votre pokémon, vous pouvez essayer de le retrouver [ici](http://www.youtube.com/watch?v=QuFfMWp-e2E).
@@ -12,7 +12,7 @@ pcreux: "@pikachuNyanNian Salut!"
 pikachuNyanNian: "Pika pika!"
 ```
 
-### F-2 - Pokemon répond en mentionnant son interlocuteur
+### P2 - Pokemon répond en mentionnant son interlocuteur
 
 Lorsque quelqu'un parle à un pokémon, celui-ci répond le mentionnant.
 
@@ -23,7 +23,7 @@ pcreux: "@pikachuNyanNian Salut!"
 pikachuNyanNian: "@pcreux Pika pika!"
 ```
 
-### F-3 - Pokemon indique le nom de son éleveur
+### P3 - Pokemon indique le nom de son éleveur
 
 Exemple:
 
@@ -39,7 +39,7 @@ pcreux: "@pikachuNyanNian Owner?"
 pikachuNyanNian: "@pcreux No owner"
 ```
 
-### F-4 - Un Pokemon sans éleveur peut être attrapé
+### P4 - Un Pokemon sans éleveur peut être attrapé
 
 Exemple:
 
@@ -51,7 +51,7 @@ pcreux: "@pikachuNyanNyan Pokeball!"
 pikachuNyanNian: "@pcreux @pcreux is my owner"
 ```
 
-### F-5 - Un pokemon avec éleveur ne peut être attrapé
+### P5 - Un pokemon avec éleveur ne peut être attrapé
 
 Exemple:
 
@@ -63,7 +63,7 @@ pcreux: "@pikachuNyanNian Pokeball!"
 pikachuNyanNian: "@pcreux @nedseb is my owner"
 ```
 
-### F-6 - Un pokemon attaque lorsque son éleveur le lui demande
+### P6 - Un pokemon attaque lorsque son éleveur le lui demande
 
 Exemple:
 
@@ -77,7 +77,7 @@ pikachuNyanNian: "@bulbizare1 #attack #foudre! /cc @pcreux"
 
 Notez que le pokemon mentionne son éleveur
 
-### F-7 - Un pokemon répond uniquement aux ordres de son éleveur
+### P7 - Un pokemon répond uniquement aux ordres de son éleveur
 
 Exemple:
 
@@ -89,7 +89,7 @@ pcreux: "@pikachuNyanNian #attack #foudre @bulbizare1"
 pikachuNyanNian: "@pcreux @nedseb is my owner"
 ```
 
-### F-8 - Un pokemon indique le nom de son éleveur dans sa bio twitter
+### P8 - Un pokemon indique le nom de son éleveur dans sa bio twitter
 
 Afin de savoir qui est l'éleveur d'un pokemon
 Le profile twitter du pokemon doit afficher le nom de son éleveur
@@ -103,7 +103,7 @@ Pour implémenter cette fonctionalité, vous utiliserez la méthode
 [`updateProfile`](http://twitter4j.org/oldjavadocs/3.0.3/twitter4j/api/UsersResources.html#updateProfile%28java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String%29) 
 de la classe `Twitter`.
 
-### F-9 - Un pokemon mentionne l'éleveur du pokemon qu'il attaque
+### P9 - Un pokemon mentionne l'éleveur du pokemon qu'il attaque
 
 * `@pcreux` élève `bulbizare1`.
 * `@nedseb` élève `pikachuNyanNian`.
@@ -117,7 +117,7 @@ bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux"
 ```
 
 
-### F-11 - Un pokemon indique lorsqu'il est #KO
+### P10 - Un pokemon indique lorsqu'il est #KO
 
 * @viviane est juge
 * @bulbizare n'a plus que 10pv
@@ -141,7 +141,7 @@ viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
 ```
 
-### F-12 - Combat
+### P11 - Combat
 
 Un dresseur est à l'origine d'un combat. Il indique le pokemon avec
 lequel il veut combattre et le nom du juge de combat.
@@ -153,7 +153,7 @@ pcreux: "@nedseb #fight with @bulbizare1 /cc @viviane"
 nedseb: "@pcreux #fight #ok with @pikachuNyanNian /cc @viviane"
 ```
 
-### F-14 - Validité des attaques
+### P12 - Validité des attaques
 
 Un pokémon refuse d'attaquer s'il ne connait pas une attaque. 
 Le joueur perd donc le droit d'attaquer pour le tour courant.
@@ -174,7 +174,7 @@ Pour connaitre les attaques dont il dispose, le pokémon peut utiliser le Pokede
 Ce fichier évoluera au fur et à mesure de l'ajout des stories, il faudra donc sur son évolution.
 Pour parser un fichier JSON vous pouvez vous inspirer des exemples suivants : https://gist.github.com/nedseb/29b8ca20dd0a5c14a9f3.
 
-### F-15 - Un Pokémon donne ses caractéristiques quand on les lui demande
+### P13 - Un Pokémon donne ses caractéristiques quand on les lui demande
 
 Un pokémon dispose d'un certain nombre de caractéristiques qui lui sont propres. 
 Il doit les donner quand on les lui demande. 
@@ -196,14 +196,15 @@ Pour connaitre le nombre de PV (courant et max) :
 pcreux: "@bulbizare1 #stat #PV ?"
 bulbizare1: "@pcreux #PV=10/100"
 ```
-### F-16 - Un Pokémon donne ses caractéristiques d'attaque quand on les lui demande
+
+### P14 - Un Pokémon donne ses caractéristiques d'attaque quand on les lui demande
 
 Pour savoir combien de PP il lui reste pour une attaque donnée :
 ```yaml
 pcreux: "@bulbizare1 #statAttack #PP #charge ?"
 bulbizare1: "@pcreux #charge #PP=10/35"
 ```
-### F-17 - Un Pokémon inactif retrouve progressivement ses PV
+### P15 - Un Pokémon inactif retrouve progressivement ses PV
 
 Un pokémon laissé inactif récupère ses PV au fil du temps. Au total il récupère 10% de ses 
 PV toutes les heures.
@@ -228,7 +229,7 @@ pcreux: "@bulbizare1 #stat #PV ?"
 bulbizare1: "@pcreux #PV=20/100"
 ```
 
-### F-18 - Un Pokémon peut aller au centre pokémon pour retrouver toutes ses capacités
+### P16 - Un Pokémon peut aller au centre pokémon pour retrouver toutes ses capacités
 
  * @JoelleBourgPalet est la gérante du centre pokémon du Bourg Palette
  * @bulbizare1 n'a plus que 10PV
@@ -266,7 +267,7 @@ Après une minute d'attente
 PokeTimer: "@JoelleBourgPalet #DringDring #PokePoke"
 ```
 
-### F-19 - Un pokemon indique son niveau dans sa bio twitter
+### P17 - Un pokemon indique son niveau dans sa bio twitter
 
 Afin de savoir qui est l'éleveur d'un pokemon
 Le profile twitter du pokemon doit afficher le nom de son éleveur
@@ -282,7 +283,7 @@ Pour implémenter cette fonctionalité, vous utiliserez la méthode
 de la classe `Twitter`.
 
 
-### F-21 - Gestion des rounds de combat
+### P18 - Gestion des rounds de combat
 
 Lors d'un combat:
 
