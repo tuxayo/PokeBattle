@@ -1,5 +1,4 @@
 ## Fonctionalités
-## Fonctionalités
 Dans la descrition de l'univers principal plusieurs rôles et services ont été définis. À chacun de ces éléments correspond un groupe fonctionnel. Chaque équipe devra choisir plusieurs groupes fonctionnels à implémenter. Les fonctionnalité de ces groupes seront nommées avec une lettre identifiant de manière unique chaque groupe et un numéro de fonctionnalité unique pour le groupe fonctionnel.
 
 * Rôles :
