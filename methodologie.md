@@ -2,7 +2,7 @@
 
 ### Formez des groupes
 
-Nous vous invitons à former des groupes de 4 à 5 personnes. Vous
+Nous vous invitons à former des groupes de 4 personnes. Vous
 travaillerez ensemble pour la durée du projet.
 
 ### Stand-up!
