@@ -119,8 +119,8 @@ bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux"
 
 ### P10 - Un pokemon indique lorsqu'il est #KO
 
-* @viviane est juge
-* @bulbizare n'a plus que 10pv
+* `@viviane` est juge
+* `@bulbizare` n'a plus que 10pv
 
 Lors d'un combat:
 
@@ -143,14 +143,18 @@ bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
 
 ### P11 - Combat
 
+* `@viviane` est juge
+
 Un dresseur est à l'origine d'un combat. Il indique le pokemon avec
 lequel il veut combattre et le nom du juge de combat.
 
-L'autre dresseur répond avec quel pokemon il souhaite combattre.
+L'autre dresseur répond avec quel pokemon il souhaite combattre. Si le juge est disponible, 
+il indique quand le combat peut demmarer.
 
 ```yaml
 pcreux: "@nedseb #fight with @bulbizare1 /cc @viviane"
 nedseb: "@pcreux #fight #ok with @pikachuNyanNian /cc @viviane"
+viviane: "@bulbizare1 @pikachuNyanNian #fight #go /cc @nedseb @pcreux"
 ```
 
 ### P12 - Validité des attaques
@@ -215,7 +219,7 @@ pcreux: "@bulbizare1 #stat #PV ?"
 bulbizare1: "@pcreux #PV=10/100"
 ```
 
-@bulbizare1 reste inactif
+`@bulbizare1` reste inactif
 
 À 9h29 :
 ```yaml
@@ -231,8 +235,8 @@ bulbizare1: "@pcreux #PV=20/100"
 
 ### P16 - Un Pokémon peut aller au centre pokémon pour retrouver toutes ses capacités
 
- * @JoelleBourgPalet est la gérante du centre pokémon du Bourg Palette
- * @bulbizare1 n'a plus que 10PV
+ * `@JoelleBourgPalet` est la gérante du centre pokémon du Bourg Palette
+ * `@bulbizare1` n'a plus que 10PV
 
 Quand un dresseur porte un de ses pokémons dans un centre pokémon, la durée des soins est proportionnelle 
 au pourcentage de PV à restaurer. 
