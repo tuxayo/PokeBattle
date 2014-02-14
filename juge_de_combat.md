@@ -86,7 +86,36 @@ viviane: "@pikachuNyanNian #Win +9xp"
 
 En réponse à une demande de combat, le juge donne son accord
 S'il est déjà en combat, il refuse
-### A12 - Un juge de combat indique son gestionaire sa bio twitter
+
+### A12 - Validité des attaques
+
+Un pokémon refuse d'attaquer s'il ne connait pas une attaque. 
+Le joueur perd donc le droit d'attaquer pour le tour courant.
+
+Lors d'un combat:
+
+```yaml
+pcreux: "@bulbizare1 #attack #charge @pikachuNyanNian /cc @nedseb @viviane"
+bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux @viviane"
+
+nedseb: "@pikachuNyanNian #attack #grumpycat @bulbizare1 /cc @pcreux @viviane"
+pikachuNyanNian: "@nedseb  o_O ? /cc @pcreux @viviane @bulbizare1"
+
+viviane: "@bulbizare1 -0pv /cc @pcreux"
+viviane: "@pikachuNyanNian -10pv /cc @nedseb"
+```
+Pour connaitre les attaques dont il dispose, le pokémon peut utiliser le Pokedex mis à sa disposition (https://raw.github.com/IUTInfoAix/Pokedex/master/data/pokedex.json). 
+Ce fichier évoluera au fur et à mesure de l'ajout des stories, il faudra donc sur son évolution.
+Pour parser un fichier JSON vous pouvez vous inspirer des exemples suivants : https://gist.github.com/nedseb/29b8ca20dd0a5c14a9f3.
+
+### A13 - Validité des attaques
+Si un pokemon accepte de lancer une attaque qu'il ne connait pas, il est sanctionné
+
+
+### A14 - Un juge de combat donne ses caractéristiques quand on les lui demande
+Nombre de combats déjà engagés dans la dernière heure
+
+### A15 - Un juge de combat indique son gestionaire sa bio twitter
 
 Afin de savoir qui est l'éleveur d'un pokemon
 Le profile twitter du pokemon doit afficher le nom de son éleveur
@@ -100,11 +129,9 @@ Exemple:
 Pour implémenter cette fonctionalité, vous utiliserez la méthode 
 [`updateProfile`](http://twitter4j.org/oldjavadocs/3.0.3/twitter4j/api/UsersResources.html#updateProfile%28java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String%29) de la classe `Twitter`.
 
-### A13 - Limite de combat
+### A16 - Limite de combat
 Suite aux accords de branche du syndicat des juges de combat travailleurs, un juge ne peut pas arbitrer plus de 5 combats à l'heure
 
-### A14 - Un juge de combat donne ses caractéristiques quand on les lui demande
-Nombre de combats déjà engagés dans la dernière heure
 
 ### A18 - Gestion des rounds de combat
 
@@ -129,6 +156,7 @@ viviane: "@pikachuNyanNian -10pv /cc @nedseb #1"
 viviane: "Round #2 /cc @nedseb @pikachuNyanNian @pcreux @bulbizare1"
 
 ```
+
 
 
 
