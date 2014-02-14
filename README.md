@@ -51,7 +51,6 @@ vous pourrez développer les [Fonctionnalités](https://github.com/IUTInfoAix/Po
 définies en suivant la [Méthodologie](https://github.com/IUTInfoAix/PokeBattle/blob/master/methodologie.md) proposée.
 
 Vous pouvez suivre l'avancement de votre projet sur le tableau de bord
-[PokeStatus](http://bit.ly/pokestatus) et sur
-[Sonar](http://sonar.zapto.org:9000/) (serveur interne à l'IUT).
+[PokeStatus](http://bit.ly/pokestatus).
 
 En fin de projet, nous vous invitons à nous faire parvenir une [Retrospective](https://github.com/IUTInfoAix/PokeBattle/blob/master/retrospective.md).
