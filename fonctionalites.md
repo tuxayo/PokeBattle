@@ -116,27 +116,6 @@ pcreux: "@bulbizare1 #attack #charge @pikachuNyanNian /cc @nedseb"
 bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux"
 ```
 
-### F-10 - Un juge indique le nombre de points perdus à chaque attaque
-
-* @viviane est juge
-* Pour le moment, toutes les attaques infligent les même dégats (-10pv), tous les pokémons ont le même nombre maximum de PV (100pv) et sont au niveau 1 
-
-Lors d'un combat:
-
-```yaml
-pcreux: "@bulbizare1 #attack #charge @pikachuNyanNian /cc @nedseb @viviane"
-bulbizare1: "@pikachuNyanNian #attack #charge /cc @nedseb @pcreux @viviane"
-
-nedseb: "@pikachuNyanNian #attack #foudre @bulbizare1 /cc @pcreux @viviane"
-pikachuNyanNian: "@bulbizare1 #attack #foudre /cc @nedseb @pcreux @viviane"
-```
-
-Le juge indique le nombre de points perdus par chaque pokemon:
-
-```yaml
-viviane: "@bulbizare1 -10pv /cc @pcreux"
-viviane: "@pikachuNyanNian -10pv /cc @nedseb"
-```
 
 ### F-11 - Un pokemon indique lorsqu'il est #KO
 
@@ -172,25 +151,6 @@ L'autre dresseur répond avec quel pokemon il souhaite combattre.
 ```yaml
 pcreux: "@nedseb #fight with @bulbizare1 /cc @viviane"
 nedseb: "@pcreux #fight #ok with @pikachuNyanNian /cc @viviane"
-```
-
-### F-13 - Vainqueur
-
-Lorsqu'un pokemon meurt:
-
-```yaml
-# suite d'attaques
-
-viviane: "@bulbizare1 -10pv /cc @pcreux"
-viviane: "@pikachuNyanNian -10pv /cc @nedseb"
-
-bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
-```
-
-Le juge indique le pokemon vainqueur:
-
-```yaml
-viviane: "@pikachuNyanNian #Win"
 ```
 
 ### F-14 - Validité des attaques
@@ -321,30 +281,7 @@ Pour implémenter cette fonctionalité, vous utiliserez la méthode
 [`updateProfile`](http://twitter4j.org/oldjavadocs/3.0.3/twitter4j/api/UsersResources.html#updateProfile%28java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String%29) 
 de la classe `Twitter`.
 
-### F-20 - Le juge calcul l'expérience gagnée en fin de combat
 
-* dans l'exemple @bulbizare1 est au niveau 1.
-* Il a une expérience de base de 64.
-* Il ne lui reste que 10pv.
-
-Après le combat, le juge va calculer l'expérience gagné par le vainqueur. 
-
-Pour calculer cette expérience, il utilise la formule suivante :
-```
-Exp = expval* Level/7
-```
-`expval` est l'expérience de base propre à l'espèce du Pokémon vaincu.
-
-```yaml
-# suite d'attaques
-
-viviane: "@bulbizare1 -10pv /cc @pcreux"
-viviane: "@pikachuNyanNian -10pv /cc @nedseb"
-
-bulbizare1: "#KO /cc @viviane @nedseb @pcreux"
-
-viviane: "@pikachuNyanNian #Win +9xp"
-```
 ### F-21 - Gestion des rounds de combat
 
 Lors d'un combat:
@@ -367,30 +304,3 @@ viviane: "@pikachuNyanNian -10pv /cc @nedseb #1"
 viviane: "Round #2 /cc @nedseb @pikachuNyanNian @pcreux @bulbizare1"
 
 ```
-### F-22 - Ajout du hashtag #PokeBattle
-
-Rajouter, quand c'est possible, le hashtag #PokeBattle à la fin de tous les tweets émis par vos bot. 
-
-### F-23 - Déployer les bots sur Heroku
-En vous aidant de ce tutoriel (https://github.com/nedseb/TutoHeroku), déployez vos bots sur la 
-plate-forme de cloud computing Heroku (http://www.heroku.com/). Soyez très vigilent avec la gestion 
-de vos clefs ssh quand vous changez de machine.
-
-### F-24 - Contrôle de la qualité de votre code
-Pour vous aider à vérifier les indicateurs de qualité de votre code, nous avons installé 
-une instance sonar sur l'un des serveurs de l'iut. Pour accèder aux métriques de votre projet 
-allez sur la page http://sonar.zapto.org:9000/ et regardez tous les indicateurs disponibles. Le 
-nom de votre projet doit commencer par votre login github. Pour importer les projets, nous nous sommes
-basé sur la liste des forks donné par github. Si vous avez rendu votre dépot privé il est possible que 
-vous n'apparaissiez pas.
-
-Pour cette fonctionnalité, vous devez diminuer autant que possible les violations indiquées par sonar
-et augmenter la couverture du code testé.
-
-### Retrospective
-
-En fin de semaine, merci de nous faire parvenir votre [retrospective](https://github.com/IUTInfoAix/PokeBattle/blob/master/retrospective.md).
-
-
-
-
