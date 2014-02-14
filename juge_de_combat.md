@@ -1,4 +1,4 @@
-## Fonctionalités de l'arbitre
+## Fonctionalités du juge de combat
 
 ### A1 - Un juge indique le nombre de points perdus à chaque attaque
 
