@@ -1,14 +1,61 @@
 ## Fonctionalités du juge de combat
 
 ### A1 - Un juge de combat répond
+Lorsque quelqu'un parle à un juge de combat, celui-ci répond en saluant. 
+
+Exemple:
+
+```yaml
+pcreux: "@viviane Salut!"
+viviane: "Salisalut très cher voisin !"
+```
 
 ### A2 - Un juge de combat répond en mentionnant son interlocuteur
+Lorsque quelqu'un parle à un juge, celui-ci répond le mentionnant.
+
+Exemple:
+
+```yaml
+pcreux: "@viviane Salut!"
+viviane: "@pcreux Salisalut très cher voisin !"
+```
 
 ### A3 - Un juge de combat indique son arène
+Exemple:
+
+```yaml
+pcreux: "@viviane Gym?"
+viviane: "@pcreux my gym is @ViridianGym"
+```
+
+ou
+
+```yaml
+pcreux: "@viviane Gym?"
+viviane: "@pcreux No gym"
+```
 
 ### A4 - Un juge de combat peut être embauché
+Exemple:
+
+```yaml
+ViridianGym: "@viviane Gym?"
+viviane: "@ViridianGym No gym"
+
+ViridianGym: "@viviane Hire!"
+viviane: "@ViridianGym my gym is @ViridianGym"
+```
 
 ### A5 - Un juge de combat embauché ne peut plus être embauché
+Exemple:
+
+```yaml
+pcreux: "@viviane Gym?"
+viviane: "@pcreux my gym is @ViridianGym"
+
+pcreux: "@viviane Hire!"
+viviane: "@pcreux @ViridianGym is my owner"
+```
 
 ### A6 - Un juge indique le nombre de points perdus à chaque attaque
 
