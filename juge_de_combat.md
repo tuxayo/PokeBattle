@@ -128,6 +128,18 @@ viviane: "@pikachuNyanNian #Win +9xp"
 ```
 
 ### A10 - Un juge de combat indique son arène dans sa bio twitter
+Afin de savoir dans quelle arène travail un juge, le profile twitter 
+du juge doit afficher le nom de son arène.
+
+Exemple:
+
+```
+#pokebattle - #juge - Gym: @ViridianGym
+```
+Pour implémenter cette fonctionalité, vous utiliserez la méthode 
+[`updateProfile`](http://twitter4j.org/oldjavadocs/3.0.3/twitter4j/api/UsersResources.html#updateProfile%28java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String%29) 
+de la classe `Twitter`.
+
 
 ### A11 - Un juge de combat valide le début du combat
 
