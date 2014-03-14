@@ -164,7 +164,7 @@ viviane: "@bulbizare1 -0pv /cc @pcreux"
 viviane: "@pikachuNyanNian -10pv /cc @nedseb"
 ```
 Pour connaitre les attaques dont il dispose, le pokémon peut utiliser le Pokedex mis à sa disposition (https://raw.github.com/IUTInfoAix/Pokedex/master/data/pokedex.json). 
-Ce fichier évoluera au fur et à mesure de l'ajout des stories, il faudra donc sur son évolution.
+Ce fichier évoluera au fur et à mesure de l'ajout des stories, il faudra donc suivre son évolution.
 Pour parser un fichier JSON vous pouvez vous inspirer des exemples suivants : https://gist.github.com/nedseb/29b8ca20dd0a5c14a9f3.
 
 ### A13 - Validité des attaques
